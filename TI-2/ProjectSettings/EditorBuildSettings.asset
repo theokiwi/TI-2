@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Hospicio.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Derrota.unity
+    guid: 1b27f27b591154346aa5c2bffbe0c07c
+  - enabled: 1
+    path: Assets/Scenes/Inicio.unity
+    guid: 33f7d6d7ffece7e45bd77aa79df29413
+  - enabled: 1
+    path: Assets/Scenes/Rua.unity
+    guid: 836d8bdede6e56a40a4fa657b644315d
   m_configObjects: {}
