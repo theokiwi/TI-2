@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 /*[Serializable]
     public class PlayerData
 {
@@ -9,6 +10,14 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    private string Inicio;
+    private string Hospicio;
+    private string Rua;
+    //private string Derrota;
+
+    public GameObject Menu;
+    bool opecao = false;
+
     public int[] characterCost; //Quantidade de personagens
     public int characterIndex;
 
@@ -25,7 +34,13 @@ public class GameManager : MonoBehaviour
     public void StarRun(int charIndex)
     {
         characterIndex = charIndex; //isso funciona como seleção, ou seja, a troca
-        //SceneManager.LoadScene(cena);
+        SceneManager.LoadScene(Hospicio);
+        //Fazer um if para trocar cena?
+    }
+    public void OnChooseClick()
+    {
+        opecao = !opecao;
+        Menu.SetActive(opecao);
     }
     public void Save()
     {
