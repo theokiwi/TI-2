@@ -95,5 +95,10 @@ public class PlayerController : MonoBehaviour
         /*}*/
         if (theTouch.phase == TouchPhase.Ended)
             canMove = true;
+
+        /*void CallMenu()
+         {
+          GameManager.gm.coins += coins; -> coloquei isso porque achei que era importante
+         }*/
     }
 }
