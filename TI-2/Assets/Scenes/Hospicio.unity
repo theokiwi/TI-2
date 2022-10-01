@@ -310,7 +310,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1300883151}
-  - component: {fileID: 1300883153}
   - component: {fileID: 1300883154}
   m_Layer: 0
   m_Name: TileGenerator
@@ -334,23 +333,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1300883153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1300883149}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81a529ded8d2cdf4b8b7da4e20f3e863, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tiles:
-  - {fileID: 8773877140066246005, guid: 9474609b20ed4884f8ae087bf025c6c9, type: 3}
-  - {fileID: 2074382620994142918, guid: aec1ea19f35e8b3419253ff68f505348, type: 3}
-  - {fileID: 5421863358542393364, guid: 5261da28a5ea6614a8d205768908fd4a, type: 3}
-  timing: 2
 --- !u!114 &1300883154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,7 +347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 963194227}
   startPoint: {fileID: 1991584807}
-  tilesPrefab: {fileID: 188708073043795498, guid: cea59d90e7fc22646af797f7426ac051, type: 3}
+  tilesPrefab: {fileID: 6478833491458192941, guid: ef029f406dc5040408c3b3c11e1d2a99, type: 3}
   moveSpeed: 8
   tilesPreSpawn: 5
   tilesNoObstacle: 1
@@ -712,6 +694,10 @@ PrefabInstance:
     - target: {fileID: 4833318465819681476, guid: ef029f406dc5040408c3b3c11e1d2a99, type: 3}
       propertyPath: m_Name
       value: TileHospicio
+      objectReference: {fileID: 0}
+    - target: {fileID: 4833318465819681476, guid: ef029f406dc5040408c3b3c11e1d2a99, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7035429537667151848, guid: ef029f406dc5040408c3b3c11e1d2a99, type: 3}
       propertyPath: m_IsActive

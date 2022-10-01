@@ -6,11 +6,13 @@ public class Menu : MonoBehaviour
 {
     public Text costText;
     public GameObject[] characters;
+    public string cena; //estou colocando aqui de forma improvisada
 
     private int characterIndex = 0; //Declarando os personagens
     void Start()
     {
         /*UpdateCoins(GameManager.gm.coins);*/
+        //GameManager.GM.Save();
     }
 
     void Update()
@@ -19,16 +21,21 @@ public class Menu : MonoBehaviour
     }
     /*Interessante que aqui ele criou a opção do Button, ou seja
       podemos pegar o script dele e por aqui -além de por no GameManager-,
-      e o motivo seria esse:
+      e o motivo seria esse:*/
     public void OnButtonClick(){
-        if(GameManager.gm.characterCost[characterIndex] <= GameManager.gm.coins) -> o personagem dele é compravel
+        SceneManager.LoadScene(cena);
+
+        //GameManager.GM.Save();
+        //GameManager.GM.StartRun(characterIndex);
+
+        /*if (GameManager.GM.characterCost[characterIndex] <= GameManager.GM.coins) // o personagem dele é compravel
         {
-            GameManager.gm.coins -= GameManager.gm.characterCost[characterIndex];
-            GameManager.gm.characterCost[characterIndex] = 0; -> ele não terá mais preço
-            GameManager.gm.Save();
-            GameManager.gm.StartRun(characterIndex);
-        }
-    }*/
+            GameManager.GM.coins -= GameManager.GM.characterCost[characterIndex];
+            GameManager.GM.characterCost[characterIndex] = 0; //ele não terá mais preço
+            GameManager.GM.Save();
+            GameManager.GM.StartRun(characterIndex);
+        }*/
+    }
 
     public void ChangeCharacter(int index) //Seleção de personagens
     {
@@ -51,5 +58,5 @@ public class Menu : MonoBehaviour
           costText.text = cost;
         Basicamente esse código me permite colocar um preço no personagem
         pórem, acredito que não vamos usar k :)*/
-    } //mins Assistir os ep 12
+    } 
 }
