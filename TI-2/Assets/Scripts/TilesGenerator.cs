@@ -13,6 +13,7 @@ public class TilesGenerator : MonoBehaviour
 
     List<TilesController> spawnedTiles = new List<TilesController>(); // Lista de tiles
 
+
     public static TilesGenerator Instance;
 
     private void Start()
@@ -24,7 +25,7 @@ public class TilesGenerator : MonoBehaviour
         for (int i = 0; i < tilesPreSpawn; i++)
         {
             spawnPos -= tilesPrefab.startPoint.position; // Calcula a diferença do offset do tile
-            TilesController currentTile = Instantiate(tilesPrefab, spawnPos, Quaternion.identity);
+            TilesController currentTile = Instantiate(tilesPrefab, spawnPos, Quaternion.identity); // de onde sai o currentTile
             if (tilesNoObstacle > 0)
             {
                 currentTile.DeactivateAllObstacles();

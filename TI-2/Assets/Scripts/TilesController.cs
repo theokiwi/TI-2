@@ -7,6 +7,7 @@ public class TilesController : MonoBehaviour
     public Transform startPoint; // GameObject marcando o início do tile
     public Transform endPoint; // GameObject marcando o final do tile
     public GameObject[] obstacles; // Lista de obstáculos
+   
 
     public void ActivateRandomObstacle()
     {
@@ -23,4 +24,20 @@ public class TilesController : MonoBehaviour
             obstacles[i].SetActive(false);
         }
     }
+    
+    private void ChangeSide()
+    {
+        int myDirection = Random.Range(0, 2);
+        
+        /**switch(TilesDirection) vai encaixar no start
+        {
+            case 0:
+            mudar a rotacao do currentTile?
+            case 1:
+
+            case 2:
+        }**/
+
+    }
+
 }
