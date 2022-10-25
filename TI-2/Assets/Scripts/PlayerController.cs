@@ -16,6 +16,9 @@ public class PlayerController : MonoBehaviour
 
     bool canMove = true;
 
+    int health = 3;
+    int sanity = 20;
+
     public bool isGrounded()
     {
         if (transform.position.y <= groundPos)
@@ -35,6 +38,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        Invoke("LooseSanity", 10);
+        Debug.Log(sanity);
         /*if (GameManager.Instance.CurrentGameState() == GameManager.GameState.Jogando)
         {*/
             if (Input.touchCount > 0)
@@ -57,12 +62,12 @@ public class PlayerController : MonoBehaviour
                         {
                             if (currentPos == PlayerPos.Right)
                             {
-                                this.gameObject.transform.position = new Vector3(0, transform.position.y, transform.position.z);
+                                this.gameObject.transform.position = new Vector3(1, transform.position.y, transform.position.z);
                                 currentPos = PlayerPos.Middle;
                             }
                             else
                             {
-                                this.gameObject.transform.position = new Vector3(-1, transform.position.y, transform.position.z);
+                                this.gameObject.transform.position = new Vector3(-2, transform.position.y, transform.position.z);
                                 currentPos = PlayerPos.Left;
                             }
                             canMove = false;
@@ -72,12 +77,12 @@ public class PlayerController : MonoBehaviour
                         {
                             if (currentPos == PlayerPos.Left)
                             {
-                                this.gameObject.transform.position = new Vector3(0, transform.position.y, transform.position.z);
+                                this.gameObject.transform.position = new Vector3(1, transform.position.y, transform.position.z);
                                 currentPos = PlayerPos.Middle;
                             }
                             else
                             {
-                                this.gameObject.transform.position = new Vector3(1, transform.position.y, transform.position.z);
+                                this.gameObject.transform.position = new Vector3(2, transform.position.y, transform.position.z);
                                 currentPos = PlayerPos.Right;
                             }
                             canMove = false;
@@ -100,5 +105,31 @@ public class PlayerController : MonoBehaviour
          {
           GameManager.gm.coins += coins; -> coloquei isso porque achei que era importante
          }*/
+
+        void OnCollisionEnter(Collision col)
+        {
+
+            if (col.gameObject.CompareTag("Pill"))
+            {
+                sanity++;
+            }
+            else if (col.gameObject.CompareTag("Enemy"))
+            {
+                health--;
+            }
+            else if (col.gameObject.CompareTag("Heal"))
+            {
+                health++;
+            }
+
+        }
     }
+
+
+    public void LooseSanity()
+    {
+        sanity--;
+    }
+
+
 }

@@ -28,12 +28,14 @@ public class GameManager : MonoBehaviour
       ALEM DE INFORMAR QUE O GAMEMANAGER NAO E ACONSELHAVEL FICAR NA CENA DO JOGO!!*/
     void Start()
     {
-        
+       
     }
+
     void Update()
     {
         
     }
+
     private void Awake()
     {
         filePath = Application.persistentDataPath + "/playerInfor.data";
@@ -74,4 +76,7 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < characterCost.Length; i++)
             characterCost[i] = data.characterCost[i];
     }
+
 }
+
+
