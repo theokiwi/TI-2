@@ -1,10 +1,14 @@
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class PlayerController : MonoBehaviour
 {
     enum PlayerPos { Left, Right, Middle };
 
     PlayerPos currentPos;
+
+    public Slider sanitySlider;
 
     private Vector3 jump;
     public float jumpForce = 0.5f;
@@ -62,7 +66,7 @@ public class PlayerController : MonoBehaviour
                         {
                             if (currentPos == PlayerPos.Right)
                             {
-                                this.gameObject.transform.position = new Vector3(1, transform.position.y, transform.position.z);
+                                this.gameObject.transform.position = new Vector3(0, transform.position.y, transform.position.z);
                                 currentPos = PlayerPos.Middle;
                             }
                             else
@@ -77,7 +81,7 @@ public class PlayerController : MonoBehaviour
                         {
                             if (currentPos == PlayerPos.Left)
                             {
-                                this.gameObject.transform.position = new Vector3(1, transform.position.y, transform.position.z);
+                                this.gameObject.transform.position = new Vector3(0, transform.position.y, transform.position.z);
                                 currentPos = PlayerPos.Middle;
                             }
                             else

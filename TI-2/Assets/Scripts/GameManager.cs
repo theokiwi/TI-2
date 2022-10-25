@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
+using UnityEngine.UI;
 //using Random = UnityEngine.Random;
 //ele colocou isso porque tinha outro script com essa definicao, assim nao teria problema
 [Serializable]
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
     public static GameManager GM;
     public GameObject Menu;
     bool opecao = false;
+    public Text score;
     //public string cena;
 
     public int[] characterCost; //Quantidade de personagens
