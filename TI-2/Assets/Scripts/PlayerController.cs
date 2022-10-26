@@ -8,8 +8,6 @@ public class PlayerController : MonoBehaviour
 
     PlayerPos currentPos;
 
-    public Slider sanitySlider;
-
     private Vector3 jump;
     public float jumpForce = 0.5f;
     Rigidbody rb;
@@ -20,8 +18,9 @@ public class PlayerController : MonoBehaviour
 
     bool canMove = true;
 
-    int health = 3;
-    int sanity = 20;
+    int health = 2;
+    int sanity = 15;
+    int mirror = 0;
 
     public bool isGrounded()
     {
@@ -38,14 +37,16 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         jump = new Vector3(0.0f, 2.0f, 0.0f);
         groundPos = transform.position.y;
+        InvokeRepeating("LooseSanity", 1.0f, 5.0f);
+
+
     }
 
     void Update()
     {
-        Invoke("LooseSanity", 10);
-        Debug.Log(sanity);
         /*if (GameManager.Instance.CurrentGameState() == GameManager.GameState.Jogando)
         {*/
+        
             if (Input.touchCount > 0)
             {
                 theTouch = Input.GetTouch(0);
@@ -110,30 +111,19 @@ public class PlayerController : MonoBehaviour
           GameManager.gm.coins += coins; -> coloquei isso porque achei que era importante
          }*/
 
-        void OnCollisionEnter(Collision col)
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Enemy")) 
         {
-
-            if (col.gameObject.CompareTag("Pill"))
-            {
-                sanity++;
-            }
-            else if (col.gameObject.CompareTag("Enemy"))
-            {
-                health--;
-            }
-            else if (col.gameObject.CompareTag("Heal"))
-            {
-                health++;
-            }
-
+            health--;
         }
     }
 
-
-    public void LooseSanity()
+    void LooseSanity()
     {
-        sanity--;
+            sanity--;
     }
-
 
 }

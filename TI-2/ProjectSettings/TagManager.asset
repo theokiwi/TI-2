@@ -4,9 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Pill
   - Enemy
   - Heal
+  - Mirror
+  - Bird
+  - Brain
   layers:
   - Default
   - TransparentFX

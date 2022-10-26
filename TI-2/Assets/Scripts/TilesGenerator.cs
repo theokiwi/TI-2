@@ -11,6 +11,7 @@ public class TilesGenerator : MonoBehaviour
     public int tilesPreSpawn = 5; // Quantidade de tiles que eu quero ter sempre em cena
     public int tilesNoObstacle = 3; // Quantidade de tiles sem obstáculos no início do jogo
 
+
     List<TilesController> spawnedTiles = new List<TilesController>(); // Lista de tiles
 
 
@@ -39,6 +40,7 @@ public class TilesGenerator : MonoBehaviour
             currentTile.transform.SetParent(transform); // Tiles viram filhos do objeto
             spawnedTiles.Add(currentTile); // Adiciona o tile na lista
         }
+                                                   
     }
 
     private void Update()
