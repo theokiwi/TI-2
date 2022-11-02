@@ -14,12 +14,14 @@ using UnityEngine.UI;
     E concluir que devo assistir os outros vídeos kjljkj*/
 }
 
+
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager GM;
     public GameObject Menu;
     bool opecao = false;
-    public Text score;
+    static public int pontos;
     //public string cena;
 
     public int[] characterCost; //Quantidade de personagens
@@ -35,7 +37,11 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        
+        if (PlayerController.health < 1)
+        {
+            Death();
+        }
+        InvokeRepeating("AddPontos", 10.0f, 10.0f);
     }
 
     private void Awake()
@@ -78,6 +84,23 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < characterCost.Length; i++)
             characterCost[i] = data.characterCost[i];
     }
+   
+    void Death()
+    {
+       SceneManager.LoadScene(3);
+    }
+
+    void AddPontos()
+    {
+        pontos++;
+    }
+    /*void Record()
+    {
+        if(health = 0 && recorde == true)
+        {
+            SceneManager.LoadScene(Vitoria);
+        }
+    }*/
 
 }
 

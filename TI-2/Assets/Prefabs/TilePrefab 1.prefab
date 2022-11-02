@@ -353,7 +353,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2039295914258067894}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.2981857, y: 0.68729067, z: 0.52884644}
@@ -467,7 +467,6 @@ GameObject:
   m_Component:
   - component: {fileID: 452439836907940750}
   - component: {fileID: 4744423221171374710}
-  - component: {fileID: 2291288179341587198}
   m_Layer: 0
   m_Name: PosteEsquerda
   m_TagString: Enemy
@@ -499,27 +498,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2728925338577758416}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.52145475, y: 0.40402746, z: 1.8342993}
   m_Center: {x: 0.008578767, y: 0.76267934, z: 1.0959202}
---- !u!54 &2291288179341587198
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2728925338577758416}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &2737786304580526374
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,7 +513,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4894508318135309136}
   - component: {fileID: 2018539112980482203}
-  - component: {fileID: 2251316100805736009}
   m_Layer: 0
   m_Name: TremDireita
   m_TagString: Enemy
@@ -562,27 +544,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2737786304580526374}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.6881216, y: 3.1486578, z: 0.7693155}
   m_Center: {x: 2.2474885, y: 1.8141057, z: 1.8755461}
---- !u!54 &2251316100805736009
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2737786304580526374}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &3275975143792261235
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,7 +559,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8345510130606790007}
   - component: {fileID: 936431944467498872}
-  - component: {fileID: 8188547866146051634}
   m_Layer: 0
   m_Name: TremEsquerda
   m_TagString: Enemy
@@ -625,27 +590,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3275975143792261235}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.4014125, y: 3.203432, z: 0.6972945}
   m_Center: {x: -1.9386818, y: 2.0034957, z: 0.7184447}
---- !u!54 &8188547866146051634
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3275975143792261235}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &3773201516814226489
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,7 +688,6 @@ GameObject:
   m_Component:
   - component: {fileID: 315672227366787225}
   - component: {fileID: 6477191804954800582}
-  - component: {fileID: 8298139271517952738}
   m_Layer: 0
   m_Name: AbaixarDireita
   m_TagString: Enemy
@@ -771,27 +719,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3936669095047706994}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.6793106, y: 2.6999211, z: 1.1876454}
   m_Center: {x: -0.07460961, y: 0.19967842, z: -0.9917071}
---- !u!54 &8298139271517952738
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3936669095047706994}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &4301098393075760342
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,7 +734,6 @@ GameObject:
   m_Component:
   - component: {fileID: 310591436791364677}
   - component: {fileID: 30540989962248392}
-  - component: {fileID: 8609265172575363412}
   m_Layer: 0
   m_Name: PosteDireita
   m_TagString: Enemy
@@ -834,27 +765,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4301098393075760342}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.0692487, y: 3.892777, z: 1.0331683}
   m_Center: {x: 2.0427783, y: 2.3955543, z: -0.016584158}
---- !u!54 &8609265172575363412
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4301098393075760342}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &5249877103578444911
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,7 +877,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6600056194836386869}
   - component: {fileID: 4387253840201245190}
-  - component: {fileID: 6972905681210375698}
   m_Layer: 0
   m_Name: PularEsquerda
   m_TagString: Enemy
@@ -994,27 +908,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5789320374544161893}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.3525906, y: 1.2152859, z: 1.1019115}
   m_Center: {x: -2.1367369, y: 0.6684385, z: -7.3766823}
---- !u!54 &6972905681210375698
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5789320374544161893}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &5871137046531686544
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,7 +923,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7010759978469730108}
   - component: {fileID: 5228156089960677634}
-  - component: {fileID: 6629674071740575276}
   m_Layer: 0
   m_Name: AbaixarEsquerda
   m_TagString: Enemy
@@ -1057,27 +954,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5871137046531686544}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.6793106, y: 2.6999211, z: 1.1876454}
   m_Center: {x: -0.07460961, y: 0.19967842, z: -0.9917071}
---- !u!54 &6629674071740575276
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5871137046531686544}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &6415244137346928618
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,7 +969,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2973374270879910660}
   - component: {fileID: 632197991579900901}
-  - component: {fileID: 5238792259958631127}
   m_Layer: 0
   m_Name: AbaixarMeio
   m_TagString: Enemy
@@ -1120,27 +1000,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6415244137346928618}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.6793106, y: 2.6999211, z: 1.1876454}
   m_Center: {x: -0.07460961, y: 0.19967842, z: -0.9917071}
---- !u!54 &5238792259958631127
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6415244137346928618}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &6594151107949306619
 GameObject:
   m_ObjectHideFlags: 0
@@ -1248,7 +1112,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3690046107966968815}
   - component: {fileID: 5117286416620239539}
-  - component: {fileID: 3225721650666630730}
   m_Layer: 0
   m_Name: PularDireita
   m_TagString: Enemy
@@ -1280,27 +1143,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6853838417810557595}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.009223, y: 0.6652889, z: 0.8334439}
   m_Center: {x: 0.018154383, y: 0.7505044, z: -0.35989583}
---- !u!54 &3225721650666630730
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6853838417810557595}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &8154851662782291320
 GameObject:
   m_ObjectHideFlags: 0
@@ -1644,7 +1491,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2367667438280078578, guid: fcfbdeaa65364e54490a66ca8550c553, type: 3}
       propertyPath: m_Name
-      value: Brain (1)
+      value: Glass
+      objectReference: {fileID: 0}
+    - target: {fileID: 2367667438280078578, guid: fcfbdeaa65364e54490a66ca8550c553, type: 3}
+      propertyPath: m_TagString
+      value: Glass
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606012475121278532, guid: fcfbdeaa65364e54490a66ca8550c553, type: 3}
+      propertyPath: m_TagString
+      value: Glass
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcfbdeaa65364e54490a66ca8550c553, type: 3}
@@ -1712,6 +1567,14 @@ PrefabInstance:
     - target: {fileID: 2367667438280078578, guid: fcfbdeaa65364e54490a66ca8550c553, type: 3}
       propertyPath: m_Name
       value: Brain (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2367667438280078578, guid: fcfbdeaa65364e54490a66ca8550c553, type: 3}
+      propertyPath: m_TagString
+      value: Glass
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606012475121278532, guid: fcfbdeaa65364e54490a66ca8550c553, type: 3}
+      propertyPath: m_TagString
+      value: Glass
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcfbdeaa65364e54490a66ca8550c553, type: 3}
@@ -2090,7 +1953,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2367667438280078578, guid: fcfbdeaa65364e54490a66ca8550c553, type: 3}
       propertyPath: m_Name
-      value: Brain
+      value: Glass
+      objectReference: {fileID: 0}
+    - target: {fileID: 2367667438280078578, guid: fcfbdeaa65364e54490a66ca8550c553, type: 3}
+      propertyPath: m_TagString
+      value: Glass
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606012475121278532, guid: fcfbdeaa65364e54490a66ca8550c553, type: 3}
+      propertyPath: m_TagString
+      value: Glass
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcfbdeaa65364e54490a66ca8550c553, type: 3}

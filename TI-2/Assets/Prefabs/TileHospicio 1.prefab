@@ -42,7 +42,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2975273190300542743}
   m_Layer: 0
-  m_Name: Brain
+  m_Name: Glass
   m_TagString: Brain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,6 @@ GameObject:
   - component: {fileID: 8138938883731464429}
   - component: {fileID: 4411487681634818487}
   - component: {fileID: 8937075539099077576}
-  - component: {fileID: 2827067190910472662}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Enemy
@@ -157,27 +156,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2147508749571831729}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &2827067190910472662
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2147508749571831729}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &2514122800137660845
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,7 +205,6 @@ GameObject:
   - component: {fileID: 1446241822461087927}
   - component: {fileID: 7056715563991012647}
   - component: {fileID: 6636919711809961612}
-  - component: {fileID: 4768364439401632201}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Enemy
@@ -303,27 +285,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2626180191408643550}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &4768364439401632201
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2626180191408643550}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &2688861167689520538
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,7 +384,7 @@ GameObject:
   - component: {fileID: 5626047634392867778}
   m_Layer: 0
   m_Name: sphere
-  m_TagString: Untagged
+  m_TagString: Glass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -514,8 +480,8 @@ GameObject:
   - component: {fileID: 1470561786820358240}
   - component: {fileID: 6563107952379443906}
   m_Layer: 0
-  m_Name: sphere
-  m_TagString: Untagged
+  m_Name: Glass
+  m_TagString: Glass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -610,7 +576,6 @@ GameObject:
   - component: {fileID: 2061116197423701587}
   - component: {fileID: 6447122899746117325}
   - component: {fileID: 5389780953763111491}
-  - component: {fileID: 335115281492058662}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Enemy
@@ -691,27 +656,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4595719360875355233}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &335115281492058662
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4595719360875355233}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &4989257665472064000
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,7 +675,7 @@ GameObject:
   - component: {fileID: 2864722419711221940}
   m_Layer: 0
   m_Name: sphere
-  m_TagString: Untagged
+  m_TagString: Glass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1089,7 +1038,6 @@ GameObject:
   - component: {fileID: 3280423754076329356}
   - component: {fileID: 9065093872300521039}
   - component: {fileID: 8690009588826348272}
-  - component: {fileID: 309944653369973333}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Enemy
@@ -1170,27 +1118,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6587421876171079650}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &309944653369973333
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6587421876171079650}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &6918343750218048464
 GameObject:
   m_ObjectHideFlags: 0
@@ -1203,7 +1135,6 @@ GameObject:
   - component: {fileID: 6035518998203166065}
   - component: {fileID: 2753328182531860154}
   - component: {fileID: 6444468986245083752}
-  - component: {fileID: 4825283717097275447}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Enemy
@@ -1284,27 +1215,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6918343750218048464}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &4825283717097275447
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6918343750218048464}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &7040045631685890688
 GameObject:
   m_ObjectHideFlags: 0
@@ -1446,7 +1361,6 @@ GameObject:
   - component: {fileID: 1048912948115192541}
   - component: {fileID: 491578924010439781}
   - component: {fileID: 4713102870436924419}
-  - component: {fileID: 4830593269476700167}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Enemy
@@ -1527,27 +1441,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7378181232990718493}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &4830593269476700167
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7378181232990718493}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &7431195877789093904
 GameObject:
   m_ObjectHideFlags: 0
@@ -1560,7 +1458,6 @@ GameObject:
   - component: {fileID: 559793232595076981}
   - component: {fileID: 5660160153465675810}
   - component: {fileID: 7083488047642842557}
-  - component: {fileID: 4071329299266512613}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Enemy
@@ -1641,27 +1538,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7431195877789093904}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &4071329299266512613
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7431195877789093904}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &7732518496936452493
 GameObject:
   m_ObjectHideFlags: 0
@@ -1704,8 +1585,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6169673137609342305}
   m_Layer: 0
-  m_Name: Brain (2)
-  m_TagString: Brain
+  m_Name: Glass
+  m_TagString: Glass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1802,7 +1683,6 @@ GameObject:
   - component: {fileID: 6447054018154268775}
   - component: {fileID: 8525892408643814520}
   - component: {fileID: 2865548323826157995}
-  - component: {fileID: 2891898301131837843}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Enemy
@@ -1883,27 +1763,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8382750996565988347}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &2891898301131837843
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8382750996565988347}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &8535925346973019252
 GameObject:
   m_ObjectHideFlags: 0
@@ -2011,8 +1875,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4654609220934476897}
   m_Layer: 0
-  m_Name: Brain (1)
-  m_TagString: Brain
+  m_Name: Glass
+  m_TagString: Glass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2045,7 +1909,6 @@ GameObject:
   - component: {fileID: 255583413971615078}
   - component: {fileID: 6066373343924256760}
   - component: {fileID: 6393422776730507183}
-  - component: {fileID: 4498288891173210599}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Enemy
@@ -2126,24 +1989,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9140932204084633682}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &4498288891173210599
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9140932204084633682}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0

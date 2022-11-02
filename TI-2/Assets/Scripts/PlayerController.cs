@@ -18,9 +18,9 @@ public class PlayerController : MonoBehaviour
 
     bool canMove = true;
 
-    int health = 2;
-    int sanity = 15;
-    int mirror = 0;
+    static public int health = 2;
+    static public int sanity = 15;
+    static public int mirror = 0;
 
     public bool isGrounded()
     {
@@ -77,7 +77,11 @@ public class PlayerController : MonoBehaviour
                             }
                             canMove = false;
                         }
+                        
+                        else if(y < 0 && canMove &&isGrounded)
+                    {
 
+                    }
                         else if (x > 0 && currentPos != PlayerPos.Right && canMove)
                         {
                             if (currentPos == PlayerPos.Left)
@@ -110,14 +114,21 @@ public class PlayerController : MonoBehaviour
          {
           GameManager.gm.coins += coins; -> coloquei isso porque achei que era importante
          }*/
+        Debug.Log(health);
+        Debug.Log(sanity);
 
     }
 
-    void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Enemy")) 
+        if (other.gameObject.CompareTag("Enemy"))
         {
             health--;
+        }
+
+        if (other.gameObject.CompareTag("Glass"))
+        {
+            sanity++;
         }
     }
 
