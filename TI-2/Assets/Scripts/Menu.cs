@@ -11,7 +11,7 @@ public class Menu : MonoBehaviour
     private int characterIndex = 0; //Declarando os personagens
     void Start()
     {
-        /*UpdateCoins(GameManager.gm.coins);*/
+        //UpdateCoins(GameManager.GM.coins);
         //GameManager.GM.Save();
     }
 
@@ -24,16 +24,15 @@ public class Menu : MonoBehaviour
       e o motivo seria esse:*/
     public void OnButtonClick(){
         SceneManager.LoadScene(cena);
-
         //GameManager.GM.Save();
-        //GameManager.GM.StartRun(characterIndex);
+       // GameManager.GM.StarRun(characterIndex);
 
         /*if (GameManager.GM.characterCost[characterIndex] <= GameManager.GM.coins) // o personagem dele é compravel
         {
             GameManager.GM.coins -= GameManager.GM.characterCost[characterIndex];
             GameManager.GM.characterCost[characterIndex] = 0; //ele não terá mais preço
             GameManager.GM.Save();
-            GameManager.GM.StartRun(characterIndex);
+            GameManager.GM.StarRun(characterIndex);
         }*/
     }
 

@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Inicio.unity
     guid: 33f7d6d7ffece7e45bd77aa79df29413
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/Hospicio.unity
+    guid: 1317d08ff40e19e4da5eb4e2ec8951ae
   - enabled: 1
     path: Assets/Scenes/Rua.unity
     guid: 836d8bdede6e56a40a4fa657b644315d
