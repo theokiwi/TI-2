@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour
     PlayerPos currentPos;
 
     private Vector3 jump;
-    public float jumpForce = 0.5f;
+    public float jumpForce = 2f;
+    public bool canJump = false;
     Rigidbody rb;
     public float groundPos;
 
@@ -25,7 +26,11 @@ public class PlayerController : MonoBehaviour
     public bool isGrounded()
     {
         if (transform.position.y <= groundPos)
+        {
+            canJump = true;
+            print("grounded");
             return true;
+        }
         else
             return false;
     }
@@ -78,7 +83,7 @@ public class PlayerController : MonoBehaviour
                             canMove = false;
                         }
                         
-                        else if(y < 0 && canMove &&isGrounded)
+                        else if(y < 0 && isGrounded() && canMove)
                     {
 
                     }
@@ -99,9 +104,10 @@ public class PlayerController : MonoBehaviour
                     }
                     else
                     {
-                        if (y > 0 && isGrounded())
+                        if (y > 0 && isGrounded() && canJump)
                         {
                             rb.AddForce(jump * jumpForce, ForceMode.Impulse);
+                            canJump = false;
                         }
                     }
                 }

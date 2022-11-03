@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -783,7 +783,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: pacientes
+  m_Text: JOGAR
 --- !u!222 &478694814
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -939,7 +939,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Menu: {fileID: 2127343793}
-  score: {fileID: 0}
   characterCost: 
   characterIndex: 0
 --- !u!1 &597785451
@@ -1444,7 +1443,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Menu: {fileID: 1218031064}
-  score: {fileID: 0}
   characterCost: 
   characterIndex: 0
 --- !u!1 &954430124
@@ -2399,7 +2397,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Menu: {fileID: 1057716509}
-  score: {fileID: 0}
   characterCost: 
   characterIndex: 0
 --- !u!114 &1403294292
@@ -2668,7 +2665,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Menu: {fileID: 1218031064}
-  score: {fileID: 0}
   characterCost: 
   characterIndex: 0
 --- !u!114 &1494056996
@@ -3304,7 +3300,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Menu: {fileID: 1627689703}
-  score: {fileID: 0}
   characterCost: 
   characterIndex: 0
 --- !u!1 &1751002191
@@ -4120,7 +4115,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Menu: {fileID: 1057716509}
-  score: {fileID: 0}
   characterCost: 
   characterIndex: 0
 --- !u!1 &2003536513
