@@ -35,7 +35,6 @@ public class PlayerController : MonoBehaviour
             return false;
     }
 
-
     void Start()
     {
         currentPos = PlayerPos.Middle;
@@ -43,15 +42,12 @@ public class PlayerController : MonoBehaviour
         jump = new Vector3(0.0f, 2.0f, 0.0f);
         groundPos = transform.position.y;
         InvokeRepeating("LooseSanity", 1.0f, 5.0f);
-
-
     }
 
     void Update()
     {
         /*if (GameManager.Instance.CurrentGameState() == GameManager.GameState.Jogando)
         {*/
-        
             if (Input.touchCount > 0)
             {
                 theTouch = Input.GetTouch(0);
@@ -84,9 +80,9 @@ public class PlayerController : MonoBehaviour
                         }
                         
                         else if(y < 0 && isGrounded() && canMove)
-                    {
-
-                    }
+                        {
+                            //box
+                        }
                         else if (x > 0 && currentPos != PlayerPos.Right && canMove)
                         {
                             if (currentPos == PlayerPos.Left)
@@ -106,6 +102,7 @@ public class PlayerController : MonoBehaviour
                     {
                         if (y > 0 && isGrounded() && canJump)
                         {
+                            Debug.Log("pular");
                             rb.AddForce(jump * jumpForce, ForceMode.Impulse);
                             canJump = false;
                         }
@@ -122,7 +119,6 @@ public class PlayerController : MonoBehaviour
          }*/
         Debug.Log(health);
         Debug.Log(sanity);
-
     }
 
     private void OnTriggerEnter(Collider other)

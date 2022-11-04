@@ -4,59 +4,15 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    public Text costText;
-    public GameObject[] characters;
     public string cena;
-
-    private int characterIndex = 0; //Declarando os personagens
-    void Start()
+    public void BtnNico()
     {
-        //UpdateCoins(GameManager.GM.coins);
-        //GameManager.GM.Save(); por que??
-    }
-
-    void Update()
-    {
-        
-    }
-    /*Interessante que aqui ele criou a opção do Button, ou seja
-      podemos pegar o script dele e por aqui -além de por no GameManager-,
-      e o motivo seria esse:*/
-    public void OnButtoClick()
-    {
+        GameManager.GM.person = 0;
         SceneManager.LoadScene(cena);
-        //GameManager.GM.Save();
-        //GameManager.GM.StarRun(characterIndex); quando tento usar eles o código não funciona ;-;
-
-        /*if (GameManager.GM.characterCost[characterIndex] <= GameManager.GM.coins) // o personagem dele é compravel
-        {
-            GameManager.GM.coins -= GameManager.GM.characterCost[characterIndex];
-            GameManager.GM.characterCost[characterIndex] = 0; //ele não terá mais preço
-            GameManager.GM.Save();
-            GameManager.GM.StarRun(characterIndex);
-        }*/
-
     }
-    public void ChangeCharacter(int index) //Seleção de personagens
+    public void BtnAlice()
     {
-        characterIndex += index;
-        if (characterIndex >= characters.Length)
-            characterIndex = 0;
-        else if (characterIndex < 0)
-            characterIndex = characters.Length - 1;
-        for (int i = 0; i < characters.Length; i++)
-        {
-            if (i == characterIndex)
-                characters[i].SetActive(true);
-            else
-                characters[i].SetActive(false);
-        }
-
-        /*string cost = "";
-          if(GameManager.gm.characterCost[characterIndex] != 0)
-             cost = GameManager.gm.characterCost[characterIndex].ToString();
-          costText.text = cost;
-        Basicamente esse código me permite colocar um preço no personagem
-        pórem, acredito que não vamos usar k :)*/
-    } 
+        GameManager.GM.person = 1;
+        SceneManager.LoadScene(cena);
+    }
 }
