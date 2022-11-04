@@ -8,11 +8,11 @@ using UnityEngine.UI;
 //ele colocou isso porque tinha outro script com essa definicao, assim nao teria problema
 [Serializable]
     public class PlayerData
-{
+    {
     public int [] characterCost;
     /*Criei isso baseado no vídeo do moço, isso funciona como "escolha de salvação"
     E concluir que devo assistir os outros vídeos kjljkj*/
-}
+    }
 
 
 
@@ -20,9 +20,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager GM;
     public GameObject Menu;
-    bool opecao = false;
     static public int pontos;
-    //public string cena;
 
     public int[] characterCost; //Quantidade de personagens
     public int characterIndex;
@@ -53,13 +51,6 @@ public class GameManager : MonoBehaviour
     public void StarRun(int charIndex)
     {
         characterIndex = charIndex; //isso funciona como seleção, ou seja, a troca
-        //SceneManager.LoadScene(cena);
-        //Fazer um if para trocar cena?
-    }
-    public void OnChooseClick()
-    {
-        opecao = !opecao;
-        Menu.SetActive(opecao);
     }
     public void Save()
     {

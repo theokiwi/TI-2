@@ -6,13 +6,13 @@ public class Menu : MonoBehaviour
 {
     public Text costText;
     public GameObject[] characters;
-    public string cena; //estou colocando aqui de forma improvisada
+    public string cena;
 
     private int characterIndex = 0; //Declarando os personagens
     void Start()
     {
         //UpdateCoins(GameManager.GM.coins);
-        //GameManager.GM.Save();
+        //GameManager.GM.Save(); por que??
     }
 
     void Update()
@@ -22,10 +22,11 @@ public class Menu : MonoBehaviour
     /*Interessante que aqui ele criou a opção do Button, ou seja
       podemos pegar o script dele e por aqui -além de por no GameManager-,
       e o motivo seria esse:*/
-    public void OnButtonClick(){
+    public void OnButtoClick()
+    {
         SceneManager.LoadScene(cena);
         //GameManager.GM.Save();
-       // GameManager.GM.StarRun(characterIndex);
+        //GameManager.GM.StarRun(characterIndex); quando tento usar eles o código não funciona ;-;
 
         /*if (GameManager.GM.characterCost[characterIndex] <= GameManager.GM.coins) // o personagem dele é compravel
         {
@@ -34,8 +35,8 @@ public class Menu : MonoBehaviour
             GameManager.GM.Save();
             GameManager.GM.StarRun(characterIndex);
         }*/
-    }
 
+    }
     public void ChangeCharacter(int index) //Seleção de personagens
     {
         characterIndex += index;

@@ -851,7 +851,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 487632116}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: Button, Assembly-CSharp
         m_MethodName: OnChooseClick
         m_Mode: 1
         m_Arguments:
@@ -909,12 +909,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 487632111}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 386537c9b4f54684f8543dc354a95ef3, type: 3}
+  m_Script: {fileID: 11500000, guid: e45e21f92df0dcf4889f18610accd061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Menu: {fileID: 2127343793}
-  characterCost: 
-  characterIndex: 0
+  cena: 
 --- !u!1 &597785451
 GameObject:
   m_ObjectHideFlags: 0
@@ -1355,7 +1354,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 810008980}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: Button, Assembly-CSharp
         m_MethodName: OnChooseClick
         m_Mode: 1
         m_Arguments:
@@ -1413,12 +1412,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 810008975}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 386537c9b4f54684f8543dc354a95ef3, type: 3}
+  m_Script: {fileID: 11500000, guid: e45e21f92df0dcf4889f18610accd061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Menu: {fileID: 1218031064}
-  characterCost: 
-  characterIndex: 0
+  cena: 
 --- !u!1 &954430124
 GameObject:
   m_ObjectHideFlags: 0
@@ -1676,6 +1674,7 @@ RectTransform:
   - {fileID: 2127343794}
   - {fileID: 487632112}
   - {fileID: 1218031065}
+  - {fileID: 1872126365}
   - {fileID: 1627689704}
   - {fileID: 1057716510}
   m_Father: {fileID: 0}
@@ -1721,7 +1720,7 @@ RectTransform:
   - {fileID: 1490155176}
   - {fileID: 1403294290}
   m_Father: {fileID: 1055375665}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2329,7 +2328,6 @@ GameObject:
   - component: {fileID: 1403294294}
   - component: {fileID: 1403294293}
   - component: {fileID: 1403294292}
-  - component: {fileID: 1403294291}
   m_Layer: 5
   m_Name: Choose (2)
   m_TagString: Untagged
@@ -2358,21 +2356,6 @@ RectTransform:
   m_AnchoredPosition: {x: 300, y: 150}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1403294291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1403294289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 386537c9b4f54684f8543dc354a95ef3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Menu: {fileID: 1057716509}
-  characterCost: 
-  characterIndex: 0
 --- !u!114 &1403294292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2417,10 +2400,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1403294291}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: OnChooseClick
-        m_Mode: 1
+      - m_Target: {fileID: 1057716509}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2597,7 +2580,6 @@ GameObject:
   - component: {fileID: 1494056998}
   - component: {fileID: 1494056997}
   - component: {fileID: 1494056996}
-  - component: {fileID: 1494056995}
   m_Layer: 5
   m_Name: Choose (1)
   m_TagString: Untagged
@@ -2626,21 +2608,6 @@ RectTransform:
   m_AnchoredPosition: {x: 300, y: 150}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1494056995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1494056993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 386537c9b4f54684f8543dc354a95ef3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Menu: {fileID: 1218031064}
-  characterCost: 
-  characterIndex: 0
 --- !u!114 &1494056996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2685,10 +2652,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1494056995}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: OnChooseClick
-        m_Mode: 1
+      - m_Target: {fileID: 1218031064}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2768,7 +2735,7 @@ RectTransform:
   m_Children:
   - {fileID: 954430125}
   m_Father: {fileID: 1627689704}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 179.949}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2900,13 +2867,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1296736414}
-  - {fileID: 1872126365}
   - {fileID: 2008627620}
   - {fileID: 1847577057}
   - {fileID: 1546520971}
   - {fileID: 1751002192}
   m_Father: {fileID: 1055375665}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3198,7 +3164,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1715165535}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: Button, Assembly-CSharp
         m_MethodName: OnChooseClick
         m_Mode: 1
         m_Arguments:
@@ -3256,12 +3222,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1715165530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 386537c9b4f54684f8543dc354a95ef3, type: 3}
+  m_Script: {fileID: 11500000, guid: e45e21f92df0dcf4889f18610accd061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Menu: {fileID: 1627689703}
-  characterCost: 
-  characterIndex: 0
+  cena: 
 --- !u!1 &1751002191
 GameObject:
   m_ObjectHideFlags: 0
@@ -3274,7 +3239,6 @@ GameObject:
   - component: {fileID: 1751002196}
   - component: {fileID: 1751002195}
   - component: {fileID: 1751002194}
-  - component: {fileID: 1751002193}
   m_Layer: 5
   m_Name: Choose (3)
   m_TagString: Untagged
@@ -3296,28 +3260,13 @@ RectTransform:
   m_Children:
   - {fileID: 2003536514}
   m_Father: {fileID: 1627689704}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 221}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1751002193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1751002191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35ae3f036ab091244a8c84146cdbcbda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  costText: {fileID: 0}
-  characters: []
-  cena: Hospicio
 --- !u!114 &1751002194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3362,9 +3311,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1751002193}
+      - m_Target: {fileID: 1872126364}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: OnButtonClick
+        m_MethodName: OnButtoClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3521,7 +3470,7 @@ RectTransform:
   m_Children:
   - {fileID: 2008727309}
   m_Father: {fileID: 1627689704}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3746,7 +3695,7 @@ MonoBehaviour:
   characters:
   - {fileID: 3410117363160952704}
   - {fileID: 4940372983425924068}
-  cena: 
+  cena: Hospicio
 --- !u!4 &1872126365
 Transform:
   m_ObjectHideFlags: 0
@@ -3759,8 +3708,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1627689704}
-  m_RootOrder: 1
+  m_Father: {fileID: 1055375665}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1890338544
 GameObject:
@@ -4046,7 +3995,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1978170368}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: Button, Assembly-CSharp
         m_MethodName: OnChooseClick
         m_Mode: 1
         m_Arguments:
@@ -4104,12 +4053,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1978170363}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 386537c9b4f54684f8543dc354a95ef3, type: 3}
+  m_Script: {fileID: 11500000, guid: e45e21f92df0dcf4889f18610accd061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Menu: {fileID: 1057716509}
-  characterCost: 
-  characterIndex: 0
+  cena: 
 --- !u!1 &2003536513
 GameObject:
   m_ObjectHideFlags: 0
@@ -4221,7 +4169,7 @@ Transform:
   - {fileID: 2601104762278114618}
   - {fileID: 5747837363761553758}
   m_Father: {fileID: 1627689704}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2008727308
 GameObject:
@@ -5960,7 +5908,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2601104762278114618}
   m_Layer: 0
-  m_Name: cagedefinitivo
+  m_Name: Player1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6741,7 +6689,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5747837363761553758}
   m_Layer: 0
-  m_Name: BimbkM1
+  m_Name: Player2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
