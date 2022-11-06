@@ -28,21 +28,5 @@ public class TilesController : MonoBehaviour
         }
     }
 
-   
-    
-    private void ChangeSide()
-    {
-        int myDirection = Random.Range(0, 2);
-        
-        /**switch(TilesDirection) vai encaixar no start
-        {
-            case 0:
-            mudar a rotacao do currentTile?
-            case 1:
-
-            case 2:
-        }**/
-
-    }
-
+ 
 }
