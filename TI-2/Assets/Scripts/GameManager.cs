@@ -10,27 +10,34 @@ public class GameManager : MonoBehaviour
     static public int maiorPonto = int.MinValue;
     public bool recorde = false;
     public bool dead = false;
+    public bool aliveYet = true;
 
     void Start()
     {
         GM = this;
         DontDestroyOnLoad(gameObject);
+        aliveYet = true;
     }
 
     void Update()
     {
         if (PlayerController.health < 1)
         {
-            dead = true;
-            if (pontos < maiorPonto)
+            if (aliveYet == true)
             {
-                Death();
-            }
-            else if (pontos > maiorPonto)
-            {
-                maiorPonto = pontos;
-                recorde = true;
-                Record();
+                dead = true;
+                if (pontos < maiorPonto)
+                {
+                    Death();
+                    aliveYet = false;
+                }
+                else if (pontos > maiorPonto)
+                {
+                    maiorPonto = pontos;
+                    recorde = true;
+                    Record();
+                    aliveYet = false;
+                }
             }
         }
         InvokeRepeating("AddPontos", 10.0f, 10.0f);
