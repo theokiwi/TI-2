@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerController : MonoBehaviour
@@ -17,6 +18,9 @@ public class PlayerController : MonoBehaviour
 
     private Touch theTouch;
     private Vector2 touchStartPosition, touchEndPosition;
+
+    //private Touch cheat;
+    //public string cena;
 
     bool canMove = true;
 
@@ -57,6 +61,18 @@ public class PlayerController : MonoBehaviour
             {
                 touchStartPosition = theTouch.position;
             }
+
+            /*cheat = Input.GetTouch(4);
+            cheat = Input.GetTouch(5);
+            if (cheat.phase != TouchPhase.Began) //suposto cheat 4
+            {
+                SceneManager.LoadScene(cena);
+            }
+            else if (cheat.phase != TouchPhase.Began) //suposto cheat 5
+            { 
+                health = 100;
+            }*/
+
             else if (theTouch.phase == TouchPhase.Moved ||
                 theTouch.phase == TouchPhase.Ended)
             {
@@ -125,6 +141,8 @@ public class PlayerController : MonoBehaviour
         {
             GetComponent<Renderer>().material.color = Color.clear;
         }
+
+        
     }
 
     void BoxReset()

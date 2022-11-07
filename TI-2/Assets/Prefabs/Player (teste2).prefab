@@ -102,6 +102,8 @@ MonoBehaviour:
   jumpForce: 7
   canJump: 1
   groundPos: 2
+  cena: Rua
+  boxCollider: {fileID: 0}
 --- !u!54 &914265809030821755
 Rigidbody:
   m_ObjectHideFlags: 0

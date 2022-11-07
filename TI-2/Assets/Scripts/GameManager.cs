@@ -34,8 +34,6 @@ public class GameManager : MonoBehaviour
             }
         }
         InvokeRepeating("AddPontos", 10.0f, 10.0f);
-
-
     }
     void Death()
     {
