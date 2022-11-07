@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public bool canJump = false;
     Rigidbody rb;
     public float groundPos;
+    bool powerUp = false;
 
     private Touch theTouch;
     private Vector2 touchStartPosition, touchEndPosition;
@@ -27,12 +28,13 @@ public class PlayerController : MonoBehaviour
     {
         if (transform.position.y <= groundPos)
         {
-            canJump = true;
             print("grounded");
             return true;
         }
         else
+        {
             return false;
+        }
     }
 
     void Start()
@@ -46,79 +48,80 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        /*if (GameManager.Instance.CurrentGameState() == GameManager.GameState.Jogando)
-        {*/
-            if (Input.touchCount > 0)
+        Debug.Log(health);
+        Debug.Log(sanity);
+        if (Input.touchCount > 0)
+        {
+            theTouch = Input.GetTouch(0);
+            if (theTouch.phase == TouchPhase.Began)
             {
-                theTouch = Input.GetTouch(0);
-                if (theTouch.phase == TouchPhase.Began)
-                {
-                    touchStartPosition = theTouch.position;
-                }
-                else if (theTouch.phase == TouchPhase.Moved ||
-                    theTouch.phase == TouchPhase.Ended)
-                {
-                    touchEndPosition = theTouch.position;
-                    float x = touchEndPosition.x - touchStartPosition.x;
-                    float y = touchEndPosition.y - touchStartPosition.y;
+                touchStartPosition = theTouch.position;
+            }
+            else if (theTouch.phase == TouchPhase.Moved ||
+                theTouch.phase == TouchPhase.Ended)
+            {
+                touchEndPosition = theTouch.position;
+                float x = touchEndPosition.x - touchStartPosition.x;
+                float y = touchEndPosition.y - touchStartPosition.y;
 
-                    if (Mathf.Abs(x) > Mathf.Abs(y))
+                if (Mathf.Abs(x) > Mathf.Abs(y))
+                {
+                    if (x < 0 && currentPos != PlayerPos.Left && canMove)
                     {
-                        if (x < 0 && currentPos != PlayerPos.Left && canMove)
+                        if (currentPos == PlayerPos.Right)
                         {
-                            if (currentPos == PlayerPos.Right)
-                            {
-                                this.gameObject.transform.position = new Vector3(0, transform.position.y, transform.position.z);
-                                currentPos = PlayerPos.Middle;
-                            }
-                            else
-                            {
-                                this.gameObject.transform.position = new Vector3(-2, transform.position.y, transform.position.z);
-                                currentPos = PlayerPos.Left;
-                            }
-                            canMove = false;
+                            this.gameObject.transform.position = new Vector3(0, transform.position.y, transform.position.z);
+                            currentPos = PlayerPos.Middle;
                         }
-                        
-                        else if(y < 0 && isGrounded() && canMove)
+                        else
                         {
-                            //box
+                            this.gameObject.transform.position = new Vector3(-3, transform.position.y, transform.position.z);
+                            currentPos = PlayerPos.Left;
                         }
-                        else if (x > 0 && currentPos != PlayerPos.Right && canMove)
-                        {
-                            if (currentPos == PlayerPos.Left)
-                            {
-                                this.gameObject.transform.position = new Vector3(0, transform.position.y, transform.position.z);
-                                currentPos = PlayerPos.Middle;
-                            }
-                            else
-                            {
-                                this.gameObject.transform.position = new Vector3(2, transform.position.y, transform.position.z);
-                                currentPos = PlayerPos.Right;
-                            }
-                            canMove = false;
-                        }
+                        canMove = false;
                     }
-                    else
+
+                    else if (y < 0 && isGrounded() && canMove)
                     {
-                        if (y > 0 && isGrounded() && canJump)
+                        //box
+                    }
+                    else if (x > 0 && currentPos != PlayerPos.Right && canMove)
+                    {
+                        if (currentPos == PlayerPos.Left)
                         {
-                            Debug.Log("pular");
-                            rb.AddForce(jump * jumpForce, ForceMode.Impulse);
-                            canJump = false;
+                            this.gameObject.transform.position = new Vector3(0, transform.position.y, transform.position.z);
+                            currentPos = PlayerPos.Middle;
                         }
+                        else
+                        {
+                            this.gameObject.transform.position = new Vector3(3, transform.position.y, transform.position.z);
+                            currentPos = PlayerPos.Right;
+                        }
+                        canMove = false;
+                    }
+                }
+                else
+                {
+                    if (y > 0 && isGrounded())
+                    {
+                        Debug.Log("pular");
+                        rb.AddForce(jump * jumpForce); //ForceMode.Impulse
+                        canJump = false;
                     }
                 }
             }
-        /*}*/
+        } 
         if (theTouch.phase == TouchPhase.Ended)
-            canMove = true;
-
-        /*void CallMenu()
-         {
-          GameManager.gm.coins += coins; -> coloquei isso porque achei que era importante
-         }*/
-        Debug.Log(health);
-        Debug.Log(sanity);
+        canMove = true;
+       
+        if (powerUp == true)
+        {
+            GetComponent<Renderer>().material.color = Color.blue;
+        }
+        if(powerUp == false)
+        {
+            GetComponent<Renderer>().material.color = Color.clear;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -130,10 +133,23 @@ public class PlayerController : MonoBehaviour
 
         if (other.gameObject.CompareTag("Glass"))
         {
-            sanity++;
+            sanity = sanity + 2;
+        }
+
+        if (other.gameObject.CompareTag("Bird"))
+        {
+            powerUp = true;
+            other.GetComponent<BoxCollider>().enabled = false;
+            Invoke("PowerUpDisable", 0.5f);
         }
     }
 
+    void PowerUpDisable()
+    {
+        GetComponent<BoxCollider>().enabled = true;
+        powerUp = false;
+    }
+   
     void LooseSanity()
     {
             sanity--;
