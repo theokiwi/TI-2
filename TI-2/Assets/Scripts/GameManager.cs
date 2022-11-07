@@ -6,6 +6,10 @@ public class GameManager : MonoBehaviour
     public static GameManager GM;
     public int person;
     static public int pontos;
+    static public int pontoAnterior;
+    static public int maiorPonto = int.MinValue;
+    public bool recorde = false;
+    public bool dead = false;
 
     void Start()
     {
@@ -17,26 +21,39 @@ public class GameManager : MonoBehaviour
     {
         if (PlayerController.health < 1)
         {
-            Death();
+            dead = true;
+            if (pontos < maiorPonto)
+            {
+                Death();
+            }
+            else if (pontos > maiorPonto)
+            {
+                maiorPonto = pontos;
+                recorde = true;
+                Record();
+            }
         }
         InvokeRepeating("AddPontos", 10.0f, 10.0f);
+
+
     }
     void Death()
     {
        SceneManager.LoadScene(3);
+       pontos = pontoAnterior;
     }
 
     void AddPontos()
     {
         pontos++;
     }
-    /*void Record()
+    void Record()
     {
-        if(health = 0 && recorde == true)
+        if(dead && recorde)
         {
-            SceneManager.LoadScene(Vitoria);
+            SceneManager.LoadScene(4);
         }
-    }*/
+    }
 
 }
 

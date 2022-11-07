@@ -20,9 +20,10 @@ public class PlayerController : MonoBehaviour
 
     bool canMove = true;
 
-    static public int health = 2;
+    static public int health = 1;
     static public int sanity = 15;
     static public int mirror = 0;
+    public BoxCollider boxCollider;
 
     public bool isGrounded()
     {
@@ -49,7 +50,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Debug.Log(health);
-        Debug.Log(sanity);
         if (Input.touchCount > 0)
         {
             theTouch = Input.GetTouch(0);
@@ -80,11 +80,6 @@ public class PlayerController : MonoBehaviour
                         }
                         canMove = false;
                     }
-
-                    else if (y < 0 && isGrounded() && canMove)
-                    {
-                        //box
-                    }
                     else if (x > 0 && currentPos != PlayerPos.Right && canMove)
                     {
                         if (currentPos == PlayerPos.Left)
@@ -108,6 +103,14 @@ public class PlayerController : MonoBehaviour
                         rb.AddForce(jump * jumpForce); //ForceMode.Impulse
                         canJump = false;
                     }
+                    else if (y < 0 && isGrounded() && canMove)
+                    {
+                        Vector3 newSize = boxCollider.size;
+                        newSize.y = newSize.y / 3;
+                        boxCollider.size = newSize;
+                        Debug.Log("sliding");
+                        Invoke("BoxReset", 0.5f);
+                    }
                 }
             }
         } 
@@ -124,6 +127,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void BoxReset()
+    {
+        Vector3 newSize = boxCollider.size;
+        newSize.y = newSize.y * 3;
+        boxCollider.size = newSize;
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
