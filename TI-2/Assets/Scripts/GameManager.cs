@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
                 {
                     Death();
                     aliveYet = false;
+                    PlayerController.health = 1;
                 }
                 else if (pontos > maiorPonto)
                 {
@@ -37,6 +38,7 @@ public class GameManager : MonoBehaviour
                     recorde = true;
                     Record();
                     aliveYet = false;
+                    PlayerController.health = 1;
                 }
             }
         }

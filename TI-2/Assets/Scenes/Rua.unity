@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1901833313}
-  m_IndirectSpecularColor: {r: 0.3617553, g: 0.39627233, b: 0.45042032, a: 1}
+  m_IndirectSpecularColor: {r: 0.36149636, g: 0.39679134, b: 0.45043522, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -348,6 +348,7 @@ MonoBehaviour:
   person: 0
   recorde: 0
   dead: 0
+  aliveYet: 1
 --- !u!4 &290213134
 Transform:
   m_ObjectHideFlags: 0
@@ -398,7 +399,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 493, y: 905}
+  m_AnchoredPosition: {x: 290, y: 905}
   m_SizeDelta: {x: 507.6774, y: 124.1927}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &549401627
@@ -475,7 +476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
+  m_BlockingObjects: 3
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -835,6 +836,7 @@ MonoBehaviour:
   jumpForce: 0.1
   canJump: 0
   groundPos: 0
+  cena: 
   boxCollider: {fileID: 0}
 --- !u!23 &2002791202
 MeshRenderer:
@@ -949,7 +951,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -636, y: 889}
+  m_AnchoredPosition: {x: -375, y: 889}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2042584020
