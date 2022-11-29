@@ -3259,6 +3259,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -8.44
       objectReference: {fileID: 0}
+    - target: {fileID: 7714108610069781147, guid: 16c17fe7637298140968340772d96d80, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8097433428326944518, guid: 16c17fe7637298140968340772d96d80, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3659,6 +3663,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4989924188559363026, guid: 281f46b3b31caf043a74bfc9763f0649, type: 3}
+      propertyPath: obstacles.Array.data[20]
+      value: 
+      objectReference: {fileID: 5820450300761813834, guid: cdf8455609d26ba48bbbf43674a94a0a, type: 3}
+    - target: {fileID: 4989924188559363026, guid: 281f46b3b31caf043a74bfc9763f0649, type: 3}
+      propertyPath: obstacles.Array.data[21]
+      value: 
+      objectReference: {fileID: 5820450300761813834, guid: cdf8455609d26ba48bbbf43674a94a0a, type: 3}
+    - target: {fileID: 4989924188559363026, guid: 281f46b3b31caf043a74bfc9763f0649, type: 3}
+      propertyPath: obstacles.Array.data[22]
+      value: 
+      objectReference: {fileID: 5820450300761813834, guid: cdf8455609d26ba48bbbf43674a94a0a, type: 3}
+    - target: {fileID: 4989924188559363026, guid: 281f46b3b31caf043a74bfc9763f0649, type: 3}
+      propertyPath: obstacles.Array.data[23]
+      value: 
+      objectReference: {fileID: 4531363527637903902, guid: 70a52caed5629c8409d2b2571d9cf5df, type: 3}
+    - target: {fileID: 4989924188559363026, guid: 281f46b3b31caf043a74bfc9763f0649, type: 3}
+      propertyPath: obstacles.Array.data[24]
+      value: 
+      objectReference: {fileID: 4531363527637903902, guid: 70a52caed5629c8409d2b2571d9cf5df, type: 3}
+    - target: {fileID: 4989924188559363026, guid: 281f46b3b31caf043a74bfc9763f0649, type: 3}
+      propertyPath: obstacles.Array.data[25]
+      value: 
+      objectReference: {fileID: 4531363527637903902, guid: 70a52caed5629c8409d2b2571d9cf5df, type: 3}
     - target: {fileID: 4989924188559363027, guid: 281f46b3b31caf043a74bfc9763f0649, type: 3}
       propertyPath: m_Name
       value: TileController
