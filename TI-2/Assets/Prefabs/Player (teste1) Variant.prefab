@@ -109,15 +109,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7380739444679949781, guid: b177c658ad7fb2742a1c7a18e804e953, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.030000001
       objectReference: {fileID: 0}
     - target: {fileID: 7380739444679949781, guid: b177c658ad7fb2742a1c7a18e804e953, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.588
       objectReference: {fileID: 0}
     - target: {fileID: 7380739444679949781, guid: b177c658ad7fb2742a1c7a18e804e953, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.53
+      value: -8.31
       objectReference: {fileID: 0}
     - target: {fileID: 7380739444679949781, guid: b177c658ad7fb2742a1c7a18e804e953, type: 3}
       propertyPath: m_LocalRotation.w
@@ -153,7 +153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7748735654768670048, guid: b177c658ad7fb2742a1c7a18e804e953, type: 3}
       propertyPath: jumpForce
-      value: 30
+      value: 19.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b177c658ad7fb2742a1c7a18e804e953, type: 3}
