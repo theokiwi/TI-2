@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
 
     PlayerPos currentPos;
 
-    private Animator animar;
+    //private Animator animar;
 
     private Vector3 jump;
     public float jumpForce = 2f;
@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
         jump = new Vector3(0.0f, 2.0f, 0.0f);
         groundPos = transform.position.y;
         InvokeRepeating("LooseSanity", 1.0f, 5.0f);
-        animar = GetComponent<Animator>();
+        //animar = GetComponent<Animator>();
     }
 
     void Update()
@@ -110,8 +110,8 @@ public class PlayerController : MonoBehaviour
                         rb.AddForce(jump * jumpForce); //ForceMode.Impulse
                         canJump = false;
                         //ativar animação do pulo com is kinematic
-                        animar.SetBool("IsJump", true);
-                        animar.SetBool("IsSlide", false);
+                        /*animar.SetBool("IsJump", true);
+                        animar.SetBool("IsSlide", false);*/
                     }
                     else if (y < 0 && isGrounded() && canMove)
                     {
@@ -121,8 +121,8 @@ public class PlayerController : MonoBehaviour
                         Debug.Log("sliding");
                         Invoke("BoxReset", 0.5f);
                         //ativar animação do slide com is kinematic
-                        animar.SetBool("IsSlide", true);
-                        animar.SetBool("IsJump", false);
+                        /*animar.SetBool("IsSlide", true);
+                        animar.SetBool("IsJump", false);*/
                     }
                 }
             }
@@ -163,13 +163,13 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             health--;
-            animar.SetBool("IsDead", true);
+            //animar.SetBool("IsDead", true);
         }
 
         if (other.gameObject.CompareTag("Glass"))
         {
             sanity = sanity + 2;
-            animar.SetBool("IsDead", false);
+            //animar.SetBool("IsDead", false);
         }
 
         if (other.gameObject.CompareTag("Bird"))
@@ -177,7 +177,7 @@ public class PlayerController : MonoBehaviour
             powerUp = true;
             other.GetComponent<BoxCollider>().enabled = false;
             Invoke("PowerUpDisable", 0.5f);
-            animar.SetBool("IsDead", false);
+            //animar.SetBool("IsDead", false);
         }
     }
 

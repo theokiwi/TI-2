@@ -55,6 +55,8 @@ public class GameManager : MonoBehaviour
     void AddPontos()
     {
         pontos++;
+        /*if (pontos > 30)
+            SceneManager.LoadScene(2);*/
     }
     void Record()
     {

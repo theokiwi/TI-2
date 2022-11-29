@@ -97,15 +97,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4356694508248536031, guid: 8e202c8b21e495748839239fad8777c4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.030000001
       objectReference: {fileID: 0}
     - target: {fileID: 4356694508248536031, guid: 8e202c8b21e495748839239fad8777c4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.588
       objectReference: {fileID: 0}
     - target: {fileID: 4356694508248536031, guid: 8e202c8b21e495748839239fad8777c4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.53
+      value: -8.31
       objectReference: {fileID: 0}
     - target: {fileID: 4356694508248536031, guid: 8e202c8b21e495748839239fad8777c4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -146,6 +146,10 @@ PrefabInstance:
     - target: {fileID: 8284057161292310286, guid: 8e202c8b21e495748839239fad8777c4, type: 3}
       propertyPath: cena
       value: Rua
+      objectReference: {fileID: 0}
+    - target: {fileID: 8284057161292310286, guid: 8e202c8b21e495748839239fad8777c4, type: 3}
+      propertyPath: jumpForce
+      value: 19.6
       objectReference: {fileID: 0}
     - target: {fileID: 8284057161292310286, guid: 8e202c8b21e495748839239fad8777c4, type: 3}
       propertyPath: boxCollider
