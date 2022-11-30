@@ -1,24 +1,9 @@
 fileFormatVersion: 2
-guid: 84d8a1e109efe6249b3e2f945c56d350
+guid: 2227c9e540c1d2b4cad6b24872c0c473
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "Cal\xE7ada.001"
-    second: {fileID: 2100000, guid: fda83d99ca6f2ec45be97175d6977d2d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Folhas.001
-    second: {fileID: 2100000, guid: fda83d99ca6f2ec45be97175d6977d2d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Vasos
-    second: {fileID: 2100000, guid: fda83d99ca6f2ec45be97175d6977d2d, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

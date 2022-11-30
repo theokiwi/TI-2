@@ -17,7 +17,9 @@ public class TilesController : MonoBehaviour
 
         int randomNumber = Random.Range(0, obstacles.Length);
         obstacles[randomNumber].SetActive(true);
-        
+        int randomNumber2 = Random.Range(0, obstacles.Length);
+        obstacles[randomNumber2].SetActive(true);
+
     }
 
     public void DeactivateAllObstacles() // Desliga todos os obstáculos

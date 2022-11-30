@@ -1,29 +1,9 @@
 fileFormatVersion: 2
-guid: 6c41ed794c7bebc4aaa3a9d4f19f5462
+guid: 41a4c6e6ef807f8439b8e2ce988dc2d8
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "Cal\xE7ada"
-    second: {fileID: 2100000, guid: 6ca3cb948869b19429a8ed6945e0ba50, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MuroTrem
-    second: {fileID: 2100000, guid: 6ca3cb948869b19429a8ed6945e0ba50, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: PortaTrem
-    second: {fileID: 2100000, guid: 6ca3cb948869b19429a8ed6945e0ba50, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Rua.003
-    second: {fileID: 2100000, guid: 6ca3cb948869b19429a8ed6945e0ba50, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

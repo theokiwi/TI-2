@@ -1,34 +1,9 @@
 fileFormatVersion: 2
-guid: d4e4321176e6d5342aef0be0124677e0
+guid: d8be6e4e7bb10264cb13776688f5a603
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Casa-1.002
-    second: {fileID: 2100000, guid: 67cc4a620bf0408438bb5a532688f94c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Casa-2.002
-    second: {fileID: 2100000, guid: 67cc4a620bf0408438bb5a532688f94c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Janela
-    second: {fileID: 2100000, guid: 67cc4a620bf0408438bb5a532688f94c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Telhado.001
-    second: {fileID: -1259168837773605846, guid: 7a58cc54f8ef6ad4ebbbd919f65f3fbf, type: 3}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Vidro.001
-    second: {fileID: 2100000, guid: 67cc4a620bf0408438bb5a532688f94c, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

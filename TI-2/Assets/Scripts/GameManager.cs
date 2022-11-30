@@ -11,7 +11,8 @@ public class GameManager : MonoBehaviour
     public bool recorde = false;
     public bool dead = false;
     public bool aliveYet = true;
-
+    public bool faseDois = false;
+    public bool faseUm = true;
     private bool ispause = false;
 
     void Start()
@@ -19,6 +20,8 @@ public class GameManager : MonoBehaviour
         GM = this;
         DontDestroyOnLoad(gameObject);
         aliveYet = true;
+        faseUm = true;
+        faseDois = false;
     }
 
     void Update()
@@ -43,6 +46,16 @@ public class GameManager : MonoBehaviour
                     PlayerController.health = 1;
                 }
             }
+
+            if (faseUm == true)
+            {
+                if (pontos > 30)
+                {
+                    ChangeScene();
+                    faseUm = false;
+                }
+            }
+
         }
         InvokeRepeating("AddPontos", 10.0f, 10.0f);
     }
@@ -52,11 +65,14 @@ public class GameManager : MonoBehaviour
        pontos = pontoAnterior;
     }
 
+    void ChangeScene()
+    {
+        SceneManager.LoadScene(2);
+    }
+
     void AddPontos()
     {
         pontos++;
-        /*if (pontos > 30)
-            SceneManager.LoadScene(2);*/
     }
     void Record()
     {
