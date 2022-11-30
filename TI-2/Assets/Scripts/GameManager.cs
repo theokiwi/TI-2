@@ -81,14 +81,14 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(4);
         }
     }
-    public void SetPause(bool P)
+    /*public void SetPause(bool P)
     {
         ispause = P;
         if (ispause)
             Time.timeScale = 0.0f;
         else
             Time.timeScale = 1.0f;
-    }
+    }*/
 }
 
 

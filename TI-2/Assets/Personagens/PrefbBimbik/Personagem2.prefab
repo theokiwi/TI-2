@@ -193,7 +193,7 @@ MonoBehaviour:
   canJump: 1
   groundPos: 0
   cena: 
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 8593766369251609042}
 --- !u!65 &8593766369251609042
 BoxCollider:
   m_ObjectHideFlags: 0

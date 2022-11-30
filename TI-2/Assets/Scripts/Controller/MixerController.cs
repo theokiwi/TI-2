@@ -9,10 +9,10 @@ public class MixerController : MonoBehaviour
     public AudioMixer mixer;
     public Slider sldMusic;
     public Slider sldFx;
-    public AudioSource sani;
+    //public AudioSource sani;
 
-    public GameObject pause;
-    bool Pause = false;
+    //public GameObject pause;
+    //bool Pause = false;
     private void Awake()
     {
         if (MC == null)
@@ -24,7 +24,7 @@ public class MixerController : MonoBehaviour
             Destroy(gameObject);
     }
 
-    private void Update()
+    /*private void Update()
     {
         Pause = !Pause;
         pause.SetActive(Pause);
@@ -37,7 +37,7 @@ public class MixerController : MonoBehaviour
             else
                 sani.Stop();
         }
-    }
+    }*/
     public void ChangeMusicVolume()
     {
         mixer.SetFloat("Music", (sldMusic.value * 20 - 20));
