@@ -335,6 +335,8 @@ MonoBehaviour:
   recorde: 0
   dead: 0
   aliveYet: 1
+  faseDois: 0
+  faseUm: 1
 --- !u!4 &142329939
 Transform:
   m_ObjectHideFlags: 0
@@ -1811,6 +1813,7 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: e3932cd1564a12b4ab36081a73148f14, type: 2}
   sldMusic: {fileID: 114224726}
   sldFx: {fileID: 1859728686}
+  sani: {fileID: 0}
   pause: {fileID: 0}
 --- !u!1 &1130627860
 GameObject:

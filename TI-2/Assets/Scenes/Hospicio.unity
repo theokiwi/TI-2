@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.36291716, g: 0.39835596, b: 0.45222425, a: 1}
+  m_IndirectSpecularColor: {r: 0.36293456, g: 0.39836577, b: 0.45223206, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1232,7 +1232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c59acf7ddf1e3943ac3bb9822678381, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Person1: {fileID: 1505454820856068225, guid: 8c7e47e5cfabdf54bb55e72d2efd9584, type: 3}
+  Person1: {fileID: 1489070746206797952, guid: 8beee07cadb7cea428d7d9b0a64dbcc3, type: 3}
   Person2: {fileID: 8566108310154653628, guid: 9c262d5c13ebf4b4398ae5967aae7b39, type: 3}
 --- !u!4 &575719104
 Transform:
@@ -3499,15 +3499,15 @@ PrefabInstance:
     - target: {fileID: 4989924188559363026, guid: 281f46b3b31caf043a74bfc9763f0649, type: 3}
       propertyPath: obstacles.Array.data[23]
       value: 
-      objectReference: {fileID: 4531363527637903902, guid: 70a52caed5629c8409d2b2571d9cf5df, type: 3}
+      objectReference: {fileID: 8761350201374416796, guid: 4e58daf8342b9ea428f0bf304851b90f, type: 3}
     - target: {fileID: 4989924188559363026, guid: 281f46b3b31caf043a74bfc9763f0649, type: 3}
       propertyPath: obstacles.Array.data[24]
       value: 
-      objectReference: {fileID: 4531363527637903902, guid: 70a52caed5629c8409d2b2571d9cf5df, type: 3}
+      objectReference: {fileID: 8761350201374416796, guid: 4e58daf8342b9ea428f0bf304851b90f, type: 3}
     - target: {fileID: 4989924188559363026, guid: 281f46b3b31caf043a74bfc9763f0649, type: 3}
       propertyPath: obstacles.Array.data[25]
       value: 
-      objectReference: {fileID: 4531363527637903902, guid: 70a52caed5629c8409d2b2571d9cf5df, type: 3}
+      objectReference: {fileID: 8761350201374416796, guid: 4e58daf8342b9ea428f0bf304851b90f, type: 3}
     - target: {fileID: 4989924188559363027, guid: 281f46b3b31caf043a74bfc9763f0649, type: 3}
       propertyPath: m_Name
       value: TileController

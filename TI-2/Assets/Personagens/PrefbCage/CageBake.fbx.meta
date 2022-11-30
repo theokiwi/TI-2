@@ -1,15 +1,56 @@
 fileFormatVersion: 2
-guid: 3cc7ac8d765e33148b12744a1ebe9634
+guid: 7329296f59f14b24c8eacebe869a16dd
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable:
   - first:
-      74: -6052290510934987335
-    second: Passaro_Rig|Move_Attack
+      74: -2458843880514799039
+    second: Armature|Move_Dead
   - first:
-      74: -4304663112694922781
-    second: Passaro_Rig|Move_Fly
-  externalObjects: {}
+      74: 3879044687616194389
+    second: Armature|Move_Jump
+  - first:
+      74: -9171064573497748361
+    second: Armature|Move_Slide
+  - first:
+      74: 4278218768131200271
+    second: Armature|Move_Walk
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Cal\xE7a"
+    second: {fileID: 2100000, guid: 7b9988434e67ca743be50950dfd14535, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fita
+    second: {fileID: 2100000, guid: 7b9988434e67ca743be50950dfd14535, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gaiola
+    second: {fileID: 2100000, guid: 7b9988434e67ca743be50950dfd14535, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Olho
+    second: {fileID: 2100000, guid: 7b9988434e67ca743be50950dfd14535, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: P.Olhos
+    second: {fileID: 2100000, guid: 7b9988434e67ca743be50950dfd14535, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pele
+    second: {fileID: 2100000, guid: 7b9988434e67ca743be50950dfd14535, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PeleOlho
+    second: {fileID: 2100000, guid: 7b9988434e67ca743be50950dfd14535, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -19,7 +60,7 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
-    optimizeGameObjects: 1
+    optimizeGameObjects: 0
     removeConstantScaleCurves: 1
     motionNodeName: 
     rigImportErrors: 
@@ -35,16 +76,15 @@ ModelImporter:
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
-    extraExposedTransformPaths:
-    - Passaro_Rig
+    extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Passaro_Rig|Move_Attack
-      takeName: Passaro_Rig|Move_Attack
+      name: Armature|Move_Dead
+      takeName: Armature|Move_Dead
       internalID: 0
       firstFrame: 0
-      lastFrame: 39
+      lastFrame: 38
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -69,11 +109,69 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Passaro_Rig|Move_Fly
-      takeName: Passaro_Rig|Move_Fly
+      name: Armature|Move_Jump
+      takeName: Armature|Move_Jump
       internalID: 0
       firstFrame: 0
-      lastFrame: 39
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Move_Slide
+      takeName: Armature|Move_Slide
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Move_Walk
+      takeName: Armature|Move_Walk
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 46
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -81,7 +179,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 0
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -116,7 +214,7 @@ ModelImporter:
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
-    bakeAxisConversion: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
@@ -154,7 +252,7 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     globalScale: 1
-    rootMotionBoneName: 
+    rootMotionBoneName: Armature
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
