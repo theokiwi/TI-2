@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
 
     PlayerPos currentPos;
 
-    //private Animator animar;
+    public Animator animar;
 
     private Vector3 jump;
     public float jumpForce = 2f;
@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
         jump = new Vector3(0.0f, 2.0f, 0.0f);
         groundPos = transform.position.y;
         InvokeRepeating("LooseSanity", 1.0f, 5.0f);
-        //animar = GetComponent<Animator>();
+        animar = GetComponent<Animator>();
     }
 
     void Update()
@@ -107,22 +107,29 @@ public class PlayerController : MonoBehaviour
                     if (y > 0 && isGrounded())
                     {
                         Debug.Log("pular");
-                        rb.AddForce(jump * jumpForce); //ForceMode.Impulse
+                        rb.AddForce(jump * jumpForce, ForceMode.VelocityChange); //ForceMode.Impulse
                         canJump = false;
                         //ativar animação do pulo com is kinematic
-                        /*animar.SetBool("IsJump", true);
-                        animar.SetBool("IsSlide", false);*/
+                        animar.SetTrigger("Jump");
+                        //animar.SetBool("IsJump", true);
+                        //animar.SetBool("IsSlide", false);
                     }
                     else if (y < 0 && isGrounded() && canMove)
                     {
+                        canMove = false;
                         Vector3 newSize = boxCollider.size;
+                        Vector3 newCenter = boxCollider.center;
                         newSize.y = newSize.y / 3;
+                        newCenter.y = 0.35f;
                         boxCollider.size = newSize;
+                        boxCollider.center = newCenter;
                         Debug.Log("sliding");
+                        Debug.Log(newSize);
                         Invoke("BoxReset", 0.5f);
                         //ativar animação do slide com is kinematic
-                        /*animar.SetBool("IsSlide", true);
-                        animar.SetBool("IsJump", false);*/
+                        animar.SetTrigger("Slide");
+                        //animar.SetBool("IsSlide", true);
+                        //animar.SetBool("IsJump", false);
                     }
                 }
             }
@@ -132,11 +139,11 @@ public class PlayerController : MonoBehaviour
        
         if (powerUp == true)
         {
-            GetComponent<Renderer>().material.color = Color.blue;
+            GetComponent<MeshRenderer>().material.color = Color.blue;
         }
         if(powerUp == false)
         {
-            GetComponent<Renderer>().material.color = Color.clear;
+            GetComponent<MeshRenderer>().material.color = Color.clear;
         }
 
         if (Input.touchCount > 5)
@@ -155,21 +162,23 @@ public class PlayerController : MonoBehaviour
     void BoxReset()
     {
         Vector3 newSize = boxCollider.size;
+        Vector3 newCenter = boxCollider.center;
+        newCenter.y = 1.055571f;
         newSize.y = newSize.y * 3;
         boxCollider.size = newSize;
+        boxCollider.center = newCenter;
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
             health--;
-            //animar.SetBool("IsDead", true);
+            animar.SetTrigger("IsDead");
         }
 
         if (other.gameObject.CompareTag("Glass"))
         {
             sanity = sanity + 2;
-            //animar.SetBool("IsDead", false);
         }
 
         if (other.gameObject.CompareTag("Bird"))
@@ -177,7 +186,6 @@ public class PlayerController : MonoBehaviour
             powerUp = true;
             other.GetComponent<BoxCollider>().enabled = false;
             Invoke("PowerUpDisable", 0.5f);
-            //animar.SetBool("IsDead", false);
         }
     }
 

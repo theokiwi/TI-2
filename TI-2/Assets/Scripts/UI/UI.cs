@@ -5,22 +5,27 @@ using UnityEngine.UI;
 
 public class UI : MonoBehaviour
 {
+    private static UI ui;
     public Image sanidade;
     public Sprite full;
     public Sprite mid;
     public Sprite empty;
     public Text pontos;
-    public int score;
+    public static int score;
     // Start is called before the first frame update
     void Start()
     {
-        score = 0;
-        InvokeRepeating("AddPontos", 1.0f, 1.0f);
+        //score = GameManager.GM.pontos;
     }
 
+    public void Awake()
+    {
+
+    }
     // Update is called once per frame
     void Update()
     {
+        pontos.text = "Pontuação: " + GameManager.GM.pontos;
         if (PlayerController.sanity > 10)
         {
             sanidade.sprite = full;
@@ -36,10 +41,5 @@ public class UI : MonoBehaviour
 
     }
 
-    void AddPontos()
-    {
-        score++;
-        pontos.text = "Pontuação: " + score;
-
-    }
+    
 }

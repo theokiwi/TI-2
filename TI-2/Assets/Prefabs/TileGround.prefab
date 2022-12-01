@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3948460158333919874}
   - component: {fileID: 100315100271455527}
   - component: {fileID: 2774379293803370989}
+  - component: {fileID: 3256270753918352364}
   m_Layer: 0
   m_Name: ClinicaTileUm
   m_TagString: Untagged
@@ -88,6 +89,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3256270753918352364
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4431664304641996856}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.13041314, y: 0.1564015, z: 0.008166688}
+  m_Center: {x: -0.29665014, y: 0.025870442, z: -0.0042967955}
 --- !u!1 &6155368755406039681
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,6 +113,7 @@ GameObject:
   - component: {fileID: 6784553995365232699}
   - component: {fileID: 7604407672040636318}
   - component: {fileID: 5651101866951199572}
+  - component: {fileID: 1620107964439891514}
   m_Layer: 0
   m_Name: ClincaTileTres
   m_TagString: Untagged
@@ -177,6 +192,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1620107964439891514
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6155368755406039681}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.13041314, y: 0.18167369, z: 0.0016466763}
+  m_Center: {x: -0.29665014, y: 0.34305713, z: -0.0041189}
 --- !u!1 &6531744776984742213
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,6 +216,7 @@ GameObject:
   - component: {fileID: 5903862766652888063}
   - component: {fileID: 7368276556534193242}
   - component: {fileID: 4730353236121217168}
+  - component: {fileID: 3033915807098011147}
   m_Layer: 0
   m_Name: ClinicaTileDois
   m_TagString: Untagged
@@ -266,6 +295,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3033915807098011147
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6531744776984742213}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.13041314, y: 0.17216125, z: 0.0016466763}
+  m_Center: {x: -0.29665014, y: 0.17500314, z: -0.0041188817}
 --- !u!1 &8097433428162057874
 GameObject:
   m_ObjectHideFlags: 0
