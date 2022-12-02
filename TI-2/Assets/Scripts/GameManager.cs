@@ -13,8 +13,6 @@ public class GameManager : MonoBehaviour
     public bool recorde = false;
     public bool dead = false;
     public bool aliveYet = true;
-    public bool faseDois = false;
-    public bool faseUm = true;
     public int highScore;
 
     public GameObject ispause;
@@ -22,20 +20,20 @@ public class GameManager : MonoBehaviour
     {
         GM = this;
         aliveYet = true;
-        faseUm = true;
-        faseDois = false;
         InvokeRepeating("AddPontos", 1.0f, 1.0f);
+ 
     }
 
+ 
+            
+        
+    
     void Update()
     {
-        if (faseUm == true)
+        if (pontos > 30)
         {
-            if (pontos > 30)
-            {
-                SceneManager.LoadScene(2);
-                faseUm = false;
-            }
+            SceneManager.LoadScene(2);
+            pontos = 31;
         }
 
         if (PlayerController.health < 1)
@@ -60,6 +58,7 @@ public class GameManager : MonoBehaviour
             }
 
         }
+  
     }
     void Death()
     {
