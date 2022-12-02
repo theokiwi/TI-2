@@ -6,28 +6,25 @@ public class GameManager : MonoBehaviour
     public static GameManager GM;
     public int person;
     public int pontos;
+
     static public int pontoAnterior;
     static public int maiorPonto = int.MinValue;
+
     public bool recorde = false;
     public bool dead = false;
     public bool aliveYet = true;
     public bool faseDois = false;
     public bool faseUm = true;
     public int highScore;
-    //private bool ispause = false;
 
+    public GameObject ispause;
     void Start()
     {
+        GM = this;
         aliveYet = true;
         faseUm = true;
         faseDois = false;
         InvokeRepeating("AddPontos", 1.0f, 1.0f);
-    }
-
-    public void Awake()
-    {
-        GM = this;
-        DontDestroyOnLoad(GM);
     }
 
     void Update()
@@ -88,14 +85,16 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("HighScore", highScore);
         }
     }
-    /*public void SetPause(bool P)
+    public void Pause()
     {
-        ispause = P;
-        if (ispause)
-            Time.timeScale = 0.0f;
-        else
-            Time.timeScale = 1.0f;
-    }*/
+        ispause.SetActive(true);
+        Time.timeScale = 0f;
+    }
+    public void Resume()
+    {
+        ispause.SetActive(false);
+        Time.timeScale = 1f;
+    }
 }
 
 

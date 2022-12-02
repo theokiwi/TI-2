@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour
 
     PlayerPos currentPos;
 
-    public Animator animar;
+    private Animator animar;
+    public new AudioSource audio;
 
     private Vector3 jump;
     public float jumpForce = 2f;
@@ -21,7 +22,7 @@ public class PlayerController : MonoBehaviour
     private Touch theTouch;
     private Vector2 touchStartPosition, touchEndPosition;
 
-    private Touch cheat;
+    //private Touch cheat;
     public string cena;
 
     bool canMove = true;
@@ -111,8 +112,6 @@ public class PlayerController : MonoBehaviour
                         canJump = false;
                         //ativar animação do pulo com is kinematic
                         animar.SetTrigger("Jump");
-                        //animar.SetBool("IsJump", true);
-                        //animar.SetBool("IsSlide", false);
                     }
                     else if (y < 0 && isGrounded() && canMove)
                     {
@@ -128,8 +127,6 @@ public class PlayerController : MonoBehaviour
                         Invoke("BoxReset", 0.5f);
                         //ativar animação do slide com is kinematic
                         animar.SetTrigger("Slide");
-                        //animar.SetBool("IsSlide", true);
-                        //animar.SetBool("IsJump", false);
                     }
                 }
             }

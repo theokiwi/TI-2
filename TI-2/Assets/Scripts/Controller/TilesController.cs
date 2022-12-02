@@ -8,9 +8,6 @@ public class TilesController : MonoBehaviour
     public Transform endPoint; // GameObject marcando o final do tile
     public GameObject[] obstacles; // Lista de obstáculos
 
-
-
-
     public void ActivateRandomObstacle()
     {
         DeactivateAllObstacles(); // Desliga todos os obstáculos antes de ligar um aleatoriamente
@@ -29,6 +26,4 @@ public class TilesController : MonoBehaviour
             obstacles[i].SetActive(false);
         }
     }
-
- 
 }

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GroundSpawner : MonoBehaviour
 {
-
     public Transform startPoint; // GameObject marcando o início do tile
     public Transform endPoint; // GameObject marcando o final do tile
     public GameObject[] obstacles; // Lista de obstáculos
@@ -12,10 +11,8 @@ public class GroundSpawner : MonoBehaviour
     public void ActivateRandomObstacle()
     {
        // DeactivateAllObstacles(); // Desliga todos os obstáculos antes de ligar um aleatoriamente
-
         int randomNumber = Random.Range(1, obstacles.Length);
         obstacles[randomNumber].SetActive(true);
-
     }
 
     public void DeactivateAllObstacles() // Desliga todos os obstáculos
@@ -25,5 +22,4 @@ public class GroundSpawner : MonoBehaviour
          //   obstacles[i].SetActive(false);
         //}
     }
-
 }

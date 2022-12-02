@@ -5,15 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MixerController : MonoBehaviour
 {
-    private static MixerController MC;
+    public static MixerController MC;
     public AudioMixer mixer;
     public Slider sldMusic;
     public Slider sldFx;
     //public AudioSource sani;
 
-    //public GameObject pause;
-    //bool Pause = false;
-    private void Awake()
+    public void Awake()
     {
         if (MC == null)
         {
@@ -24,20 +22,16 @@ public class MixerController : MonoBehaviour
             Destroy(gameObject);
     }
 
-    /*private void Update()
+    private void Update()
     {
-        Pause = !Pause;
-        pause.SetActive(Pause);
-        GameManager.GM.SetPause(Pause); //teoricamente é pra funciona kjl
-
-        if(SceneManager.GetActiveScene().buildIndex >= 1 && SceneManager.GetActiveScene().buildIndex < 2)
+        /*if(SceneManager.GetActiveScene().buildIndex >= 1 && SceneManager.GetActiveScene().buildIndex < 2)
         {
             if (PlayerController.sanity < 10)
                 sani.Play();
             else
                 sani.Stop();
-        }
-    }*/
+        }*/
+    }
     public void ChangeMusicVolume()
     {
         mixer.SetFloat("Music", (sldMusic.value * 20 - 20));
