@@ -10,6 +10,8 @@ TagManager:
   - Bird
   - Glass
   - Brain
+  - textopontos
+  - imagemsanidade
   layers:
   - Default
   - TransparentFX
