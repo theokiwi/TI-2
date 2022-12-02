@@ -625,9 +625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: -4568768289911310220}
-  pular: {fileID: 8300000, guid: 2353232579e1bec4b82f12dcb1efdc71, type: 3}
-  dor: {fileID: 8300000, guid: f4a730a31fde4db42a0a53d0daeabb53, type: 3}
-  jumpForce: 0.4
+  jumpForce: 0.01
   canJump: 1
   groundPos: 0
   cena: 

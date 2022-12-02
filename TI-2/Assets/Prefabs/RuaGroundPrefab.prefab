@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 1475451829901126322}
   - component: {fileID: 2582251481348171031}
   - component: {fileID: 302575994545050077}
+  - component: {fileID: 4878859932087979841}
   m_Layer: 0
   m_Name: RUATileTrem 1
   m_TagString: Untagged
@@ -57,7 +58,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2247871480480444424}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 24.93069, y: 7.6139617, z: -25.3616}
+  m_LocalPosition: {x: 24.93069, y: 0, z: -25.3616}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -124,6 +125,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4878859932087979841
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2247871480480444424}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2503909, y: 0.063600056, z: 0.003855405}
+  m_Center: {x: -0.16408719, y: 0.18063669, z: -0.0017566333}
 --- !u!1 &5423009963562748225
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,6 +149,7 @@ GameObject:
   - component: {fileID: 4614419922972283899}
   - component: {fileID: 8621699403590179934}
   - component: {fileID: 5783354902493292692}
+  - component: {fileID: 1667250110658070483}
   m_Layer: 0
   m_Name: RUATileUm 1
   m_TagString: Untagged
@@ -150,7 +165,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5423009963562748225}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 24.790691, y: 7.543962, z: -61.4716}
+  m_LocalPosition: {x: 24.790691, y: 0, z: -61.4716}
   m_LocalScale: {x: 100, y: 100, z: 399.83774}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -216,6 +231,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1667250110658070483
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5423009963562748225}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2503909, y: 0.063600056, z: 0.003855405}
+  m_Center: {x: -0.16408719, y: 0, z: -0.0017566333}
 --- !u!1 &6377786404851917334
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,6 +255,7 @@ GameObject:
   - component: {fileID: 6037535296322795692}
   - component: {fileID: 7234603753032972041}
   - component: {fileID: 4864607234567177155}
+  - component: {fileID: 3292939069538893360}
   m_Layer: 0
   m_Name: RUATileDois 1
   m_TagString: Untagged
@@ -242,7 +271,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6377786404851917334}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 24.810692, y: 7.56, z: -49.46}
+  m_LocalPosition: {x: 24.810692, y: 0, z: -49.46}
   m_LocalScale: {x: 100, y: 100, z: 398.44788}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -308,6 +337,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3292939069538893360
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6377786404851917334}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2503909, y: 0.063600056, z: 0.003855405}
+  m_Center: {x: -0.16408719, y: 0.06, z: -0.0017566333}
 --- !u!1 &6467007545338653215
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,6 +449,7 @@ GameObject:
   - component: {fileID: 8568032209493209672}
   - component: {fileID: 4704036694750248429}
   - component: {fileID: 7398551322446612775}
+  - component: {fileID: 6140082845552830515}
   m_Layer: 0
   m_Name: RUATileTres 1
   m_TagString: Untagged
@@ -422,7 +465,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9055634162308016370}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 24.790691, y: 7.543962, z: -37.4416}
+  m_LocalPosition: {x: 24.790691, y: 0, z: -37.4416}
   m_LocalScale: {x: 100, y: 100, z: 450.43515}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -484,3 +527,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6140082845552830515
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9055634162308016370}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2503909, y: 0.063600056, z: 0.003855405}
+  m_Center: {x: -0.16408719, y: 0.12, z: -0.0017566333}

@@ -75,6 +75,8 @@ public class GameManager : MonoBehaviour
     void AddPontos()
     {
         pontos++;
+        PlayerPrefs.SetInt("score", pontos);
+
     }
     void Record()
     {
