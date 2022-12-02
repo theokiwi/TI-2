@@ -3,57 +3,7 @@ guid: 48a7e6a6eff1fcc41997eabfbb17edc8
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "Cal\xE7ada.002"
-    second: {fileID: 2100000, guid: fda83d99ca6f2ec45be97175d6977d2d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Casa-1.002
-    second: {fileID: 2100000, guid: 67cc4a620bf0408438bb5a532688f94c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Casa-2.002
-    second: {fileID: 2100000, guid: 67cc4a620bf0408438bb5a532688f94c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Folhas.002
-    second: {fileID: 2100000, guid: fda83d99ca6f2ec45be97175d6977d2d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Gravetos
-    second: {fileID: 2100000, guid: fda83d99ca6f2ec45be97175d6977d2d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Janela
-    second: {fileID: 2100000, guid: 0755b12d9af8ca4428510dfef2d225c0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Rua.001
-    second: {fileID: 2100000, guid: fda83d99ca6f2ec45be97175d6977d2d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Telhado.001
-    second: {fileID: 2100000, guid: df3a1e91be9a153439508f31ac5de1fa, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Vasos.001
-    second: {fileID: 2100000, guid: fda83d99ca6f2ec45be97175d6977d2d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Vidro.001
-    second: {fileID: 2100000, guid: 0755b12d9af8ca4428510dfef2d225c0, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
