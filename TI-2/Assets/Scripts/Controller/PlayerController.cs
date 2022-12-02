@@ -10,7 +10,9 @@ public class PlayerController : MonoBehaviour
     PlayerPos currentPos;
 
     private Animator animar;
-    public new AudioSource audio;
+    public AudioSource running;
+    public AudioSource jumping;
+    public AudioSource dead;
 
     private Vector3 jump;
     public float jumpForce = 2f;
@@ -111,7 +113,8 @@ public class PlayerController : MonoBehaviour
                         rb.AddForce(jump * jumpForce, ForceMode.VelocityChange); //ForceMode.Impulse
                         canJump = false;
                         //ativar animação do pulo com is kinematic
-                        animar.SetTrigger("Jump");
+                        animar.SetTrigger("IsJump");
+                        jumping.Play();
                     }
                     else if (y < 0 && isGrounded() && canMove)
                     {
@@ -126,7 +129,7 @@ public class PlayerController : MonoBehaviour
                         Debug.Log(newSize);
                         Invoke("BoxReset", 0.5f);
                         //ativar animação do slide com is kinematic
-                        animar.SetTrigger("Slide");
+                        animar.SetTrigger("IsSlide");
                     }
                 }
             }
@@ -170,6 +173,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             health--;
+            dead.Play();
             animar.SetTrigger("IsDead");
         }
 
