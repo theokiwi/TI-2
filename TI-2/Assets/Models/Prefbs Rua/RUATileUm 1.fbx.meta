@@ -3,7 +3,57 @@ guid: f76c7dcf81c14b14585c220a70606a90
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Cal\xE7ada.001"
+    second: {fileID: 2100000, guid: fda83d99ca6f2ec45be97175d6977d2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Casa-1.001
+    second: {fileID: 2100000, guid: 0755b12d9af8ca4428510dfef2d225c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Casa-2.001
+    second: {fileID: 2100000, guid: 0755b12d9af8ca4428510dfef2d225c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Folhas.001
+    second: {fileID: 2100000, guid: fda83d99ca6f2ec45be97175d6977d2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gravetos.001
+    second: {fileID: 2100000, guid: fda83d99ca6f2ec45be97175d6977d2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Janela.001
+    second: {fileID: 2100000, guid: 0755b12d9af8ca4428510dfef2d225c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rua
+    second: {fileID: 2100000, guid: fda83d99ca6f2ec45be97175d6977d2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Telhado
+    second: {fileID: 2100000, guid: df3a1e91be9a153439508f31ac5de1fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vasos
+    second: {fileID: 2100000, guid: fda83d99ca6f2ec45be97175d6977d2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vidro
+    second: {fileID: 2100000, guid: 0755b12d9af8ca4428510dfef2d225c0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

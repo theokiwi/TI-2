@@ -3,7 +3,37 @@ guid: d8be6e4e7bb10264cb13776688f5a603
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Cal\xE7ada.001"
+    second: {fileID: 2100000, guid: fda83d99ca6f2ec45be97175d6977d2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Folhas.001
+    second: {fileID: 2100000, guid: fda83d99ca6f2ec45be97175d6977d2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gravetos.001
+    second: {fileID: 2100000, guid: fda83d99ca6f2ec45be97175d6977d2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Muro
+    second: {fileID: 2100000, guid: 6ca3cb948869b19429a8ed6945e0ba50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rua
+    second: {fileID: 2100000, guid: fda83d99ca6f2ec45be97175d6977d2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vasos
+    second: {fileID: 2100000, guid: fda83d99ca6f2ec45be97175d6977d2d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

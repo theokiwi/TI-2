@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
                         rb.AddForce(jump * jumpForce, ForceMode.VelocityChange); //ForceMode.Impulse
                         canJump = false;
                         //ativar animação do pulo com is kinematic
-                        animar.SetTrigger("Jump");
+                        animar.SetTrigger("IsJump");
                     }
                     else if (y < 0 && isGrounded() && canMove)
                     {
@@ -126,7 +126,7 @@ public class PlayerController : MonoBehaviour
                         Debug.Log(newSize);
                         Invoke("BoxReset", 0.5f);
                         //ativar animação do slide com is kinematic
-                        animar.SetTrigger("Slide");
+                        animar.SetTrigger("IsSlide");
                     }
                 }
             }
