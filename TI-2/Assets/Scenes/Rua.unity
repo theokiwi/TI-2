@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1901833313}
-  m_IndirectSpecularColor: {r: 0.36147985, g: 0.39678055, b: 0.4504282, a: 1}
+  m_IndirectSpecularColor: {r: 0.36149636, g: 0.39679134, b: 0.45043522, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -645,8 +645,6 @@ MonoBehaviour:
   recorde: 0
   dead: 0
   aliveYet: 1
-  faseDois: 0
-  faseUm: 1
   highScore: 0
   ispause: {fileID: 1515361448}
 --- !u!4 &290213134
@@ -1366,7 +1364,7 @@ RectTransform:
   m_GameObject: {fileID: 1036910025}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2.5, z: 1}
+  m_LocalScale: {x: 2.2, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 711200606}
@@ -1375,7 +1373,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 200, y: 745}
+  m_AnchoredPosition: {x: 200, y: 727}
   m_SizeDelta: {x: 150, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1036910027

@@ -172,9 +172,9 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            health--;
             dead.Play();
             animar.SetTrigger("IsDead");
+            health--; 
         }
 
         if (other.gameObject.CompareTag("Glass"))
@@ -199,5 +199,7 @@ public class PlayerController : MonoBehaviour
     void LooseSanity()
     {
             sanity--;
+        if (sanity == 0)
+            GameManager.GM.Death();
     }
 }

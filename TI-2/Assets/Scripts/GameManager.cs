@@ -30,10 +30,10 @@ public class GameManager : MonoBehaviour
     
     void Update()
     {
-        if (pontos > 30)
+        if (pontos > 150)
         {
             SceneManager.LoadScene(2);
-            pontos = 31;
+            pontos = 151;
         }
 
         if (PlayerController.health < 1)
@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
         }
   
     }
-    void Death()
+    public void Death()
     {
        SceneManager.LoadScene(3);
        pontos = pontoAnterior;
